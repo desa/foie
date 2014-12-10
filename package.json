@@ -1,0 +1,22 @@
+{
+  "name": "foie",
+  "version": "0.0.1",
+  "description": "duck-like typing system for js",
+  "main": "foie.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjdesa/foie.git"
+  },
+  "keywords": [
+    "type"
+  ],
+  "author": "Michael Desa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjdesa/foie/issues"
+  },
+  "homepage": "https://github.com/mjdesa/foie"
+}
