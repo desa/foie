@@ -1,6 +1,6 @@
 {
   "name": "foie",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "duck-like typing system for js",
   "main": "foie.js",
   "scripts": {
