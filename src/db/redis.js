@@ -20,6 +20,14 @@ var save = function(cb) {
   }
 };
 
+//Required Class methods to Implement
+var create = function() { console.log('created'); };
+var read = function() { console.log('read'); };
+var update = function() { console.log('update'); };
+var destroy = function() { console.log('destroy'); };
+//Extra query method
+var query = function() { console.log('query'); };
+
 //Constructor for user in example
 function User(name,email) {
   this.name = name;
