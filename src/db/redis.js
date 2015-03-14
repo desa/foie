@@ -43,6 +43,7 @@ var mike = new User("Mike", "mjd@ga.co");
 mike.save(function(err, reply) {
   if (err) throw err;
   console.log("REPLY",reply);
+  //check get current user ID and print out object
   client.get('user:id', function(err, id) {
     if (err) throw err;
     console.log("ID", id);
