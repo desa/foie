@@ -22,6 +22,7 @@ We attach methods for saving the object.
 var mike = new User();
 
 mike.save();
+mike.query("SELECT * FROM USER");
 ```
 
 ```js
