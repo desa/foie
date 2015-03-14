@@ -1,12 +1,20 @@
 var fs = require('fs');
+var path = require('path'); // NOTE: I added this module to resolve fs paths more easily
 var _ = require('underscore');
 var async = require('async');
 
-//NEED BETTER WAY TO REQUIRE MODELS
-var models = [require('../tests/examples/models/userModel.js'),
-  require('../tests/examples/models/nameModel.js'),
-  require('../tests/examples/models/lameModel.js')
-];
+// HERE'S YOUR BETTER WAY TO REQUIRE MODELS AUTOMATICALLY
+// Note: might be good, eventually, to set the location of the models to an env var,
+// would be nice to get rid of the hardcoded paths.
+
+var models = []; // initialize the array
+fs
+  .readdirSync(path.resolve(__dirname, "../tests/examples/models"))
+  .forEach(function(file) {
+    models.push(require("../tests/examples/models/" + file));
+  });
+
+// console.log(models); // Not necessary unless you want to see the results of this code
 
 
 //FOIE Land
